@@ -219,7 +219,7 @@
       {
         "file": "assets/Carbon512.jpg",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Carbon512.jpg\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Carbon512.jpg",
         "smoothed": true,
         "userAdded": false,
@@ -364,6 +364,14 @@
         "name": "Sprite-nave.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Carbon512.jpg2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Carbon512.jpg2",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -386,7 +394,7 @@
       "title": "",
       "v": 71,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -396,11 +404,11 @@
         "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": true,
-        "zoomFactor": 0.6040838749989074,
+        "snap": false,
+        "zoomFactor": 0.5290357402157019,
         "windowMask": false,
         "selectedLayer": "",
-        "gameEditorMode": "embedded-game"
+        "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
       "variables": [
@@ -878,7 +886,7 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 180,
           "customSize": true,
           "depth": 32,
           "height": 32,
@@ -886,9 +894,9 @@
           "name": "Carbon",
           "persistentUuid": "a2d5646a-257a-4462-a42c-f891cbbac2ed",
           "width": 32,
-          "x": 704,
+          "x": 736,
           "y": 786,
-          "z": 217,
+          "z": 244,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -989,6 +997,42 @@
           "x": 1024,
           "y": 288,
           "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 767,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Left",
+          "opacity": 51,
+          "persistentUuid": "522f5bc9-a661-4cca-93eb-5044b4d2813e",
+          "width": 186,
+          "x": -9,
+          "y": -18,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 748,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Right",
+          "opacity": 51,
+          "persistentUuid": "458730fb-3ed6-41cb-8039-3203ecc5e0e5",
+          "width": 186,
+          "x": 1099,
+          "y": -25,
+          "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1103,10 +1147,10 @@
           "effects": [],
           "behaviors": [
             {
-              "cost": 2,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             }
           ],
           "content": {
@@ -1305,8 +1349,8 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "ShadowBias": 0,
-            "ShadowQuality": "Low"
+            "ShadowBias": 1,
+            "ShadowQuality": "Medium"
           }
         },
         {
@@ -1648,7 +1692,7 @@
             "isCastingShadow": true,
             "isReceivingShadow": true,
             "keepAspectRatio": true,
-            "materialType": "StandardWithoutMetalness",
+            "materialType": "KeepOriginal",
             "modelResourceName": "copit.glb",
             "originLocation": "ModelOrigin",
             "rotationX": 90,
@@ -1672,7 +1716,7 @@
             "depth": 100,
             "enableTextureTransparency": false,
             "facesOrientation": "Y",
-            "frontFaceResourceName": "Carbon512.jpg",
+            "frontFaceResourceName": "Carbon512.jpg2",
             "backFaceResourceName": "Carbon512.jpg",
             "backFaceUpThroughWhichAxisRotation": "X",
             "leftFaceResourceName": "Carbon512.jpg",
@@ -1685,7 +1729,7 @@
             "rightFaceVisible": true,
             "topFaceVisible": true,
             "bottomFaceVisible": true,
-            "frontFaceResourceRepeat": true,
+            "frontFaceResourceRepeat": false,
             "backFaceResourceRepeat": true,
             "leftFaceResourceRepeat": true,
             "rightFaceResourceRepeat": true,
@@ -2065,6 +2109,30 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
+          "name": "Left",
+          "persistentUuid": "3c46e969-0c76-4026-8880-2534b6e0b953",
+          "texture": "assets\\StartingCollisionArea.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
+          "name": "Right",
+          "persistentUuid": "4289bd0b-bae4-4e63-8736-7718159ce0a7",
+          "texture": "assets\\StartingCollisionArea.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -2114,6 +2182,12 @@
           },
           {
             "objectName": "Collision_Impassable"
+          },
+          {
+            "objectName": "Left"
+          },
+          {
+            "objectName": "Right"
           },
           {
             "objectName": "HPmeter"
@@ -2199,6 +2273,18 @@
                 "RTSUnit",
                 "Effect",
                 "\"Selected\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FirstPersonCamera::LookFrom3DObjectEyes"
+              },
+              "parameters": [
+                "",
+                "Carbon",
+                "Object3D",
+                "\"3d\"",
                 ""
               ]
             }
@@ -2696,6 +2782,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Keyboard controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3355,6 +3442,100 @@
               ]
             }
           ]
+        },
+        {
+          "disabled": true,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Right",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "1",
+                    "\"3d\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Left",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "-",
+                    "1",
+                    "\"3d\"",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "1",
+                    "\"3d\"",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3399,9 +3580,9 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "UI",
+          "name": "3d",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -3456,7 +3637,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "3d",
+          "name": "UI",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
