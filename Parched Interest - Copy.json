@@ -170,6 +170,44 @@
         "name": "NewTiledSprite",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/StartUnit2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\StartUnit2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Mini Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -203,7 +241,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.604083874998903,
+        "zoomFactor": 0.7130377630690596,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -309,15 +347,36 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 100,
-          "layer": "3d",
-          "name": "WoodFloor066ABlock",
-          "persistentUuid": "c30752bb-7d86-4e99-a7f2-ba7524f3507b",
-          "width": 100,
-          "x": 576,
-          "y": 640,
-          "z": 96,
-          "zOrder": 12,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Ground_Tilemap",
+          "persistentUuid": "0b3e3314-224c-42f0-bf60-91891ceeca17",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": -11,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":40,\"dimY\":23,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,0,0,0,20,20,20,20,20,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,0,1,1,1,1,1,1,1,1,1,1,1,20,20,20,20,0,0,0,20,20,20,20,20,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,7,7,7,7,7,7,7,7,0,1,20,20,20,20,0,0,0,20,20,20,0,1,0,0,0,1,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,20,20,20,20,6,7,20,20,20,20,0,0,0,20,20,20,6,7,0,0,6,7,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,0,0,0,0,1,20,6,7,20,20,20,20,0,1,0,20,20,20,6,7,20,20,6,7,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,6,6,0,0,1,20,6,7,20,20,20,20,6,7,0,20,20,20,6,7,20,20,6,7,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,6,6,6,6,7,20,6,7,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,6,7,6,7,1,20,6,7,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,6,0,7,6,7,20,6,7,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,7,6,7,1,1,1,1,1,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,6,7,7,7,7,7,7,7,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,0,1,20,20,20,20,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,0,1,20,20,20,20,20,20,20,20,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,6,7,0,0,0,1,0,1,1,1,6,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,0,1,0,0,6,7,0,1,1,1,1,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,6,7,6,7,6,7,0,1,1,1,1,7,0,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,6,7,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,7,7,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,7,20,20,20,20,20],[6,7,7,7,7,7,7,7,7,7,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RTSUnit",
+          "persistentUuid": "590596fd-357c-4cbb-b960-637af4178a82",
+          "width": 0,
+          "x": 1217,
+          "y": 250,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -326,15 +385,152 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 96,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Collision_Impassable",
-          "persistentUuid": "96bcb4eb-a2ff-4064-b7cc-ad268394bd36",
-          "width": 64,
-          "x": 1184,
-          "y": 352,
-          "zOrder": 13,
+          "name": "HealthBackground",
+          "persistentUuid": "0b28414c-7bb5-45b4-8323-26d24bbce77d",
+          "width": 160,
+          "x": 32,
+          "y": 64,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBackground",
+          "persistentUuid": "a36aaeeb-3885-43ba-8a5b-5b53325b914f",
+          "width": 160,
+          "x": 32,
+          "y": 128,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBackground",
+          "persistentUuid": "69581b7a-e007-46ba-9f5a-ccea0ca3918c",
+          "width": 160,
+          "x": 32,
+          "y": 192,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HealthBackground",
+          "persistentUuid": "bfeacd4d-6290-40a6-a6bc-b66e4e85094a",
+          "width": 160,
+          "x": 32,
+          "y": 256,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "State",
+          "persistentUuid": "2dd26130-eef9-4001-9fb8-ec985f71f2b6",
+          "width": 96,
+          "x": 64,
+          "y": 64,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "State2",
+          "persistentUuid": "e64a5829-ca36-4cdc-a0f0-8f2a6f04928d",
+          "width": 96,
+          "x": 64,
+          "y": 128,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "State3",
+          "persistentUuid": "00767ac1-f36d-4d7a-9b73-a2ab1e6129bf",
+          "width": 96,
+          "x": 64,
+          "y": 192,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "State4",
+          "persistentUuid": "ec489ac4-7522-4f32-9a7d-35302527ed2b",
+          "width": 96,
+          "x": 64,
+          "y": 256,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 384,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TextBox",
+          "opacity": 51,
+          "persistentUuid": "2993fe3e-ab8f-4824-89b2-9440c93f06d7",
+          "width": 256,
+          "x": 32,
+          "y": 320,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -400,12 +596,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartUnit",
+                      "image": "assets\\StartUnit2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 17.5,
-                        "y": 48
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -447,38 +643,21 @@
           "type": "TileMap::SimpleTileMap",
           "variables": [],
           "effects": [],
-          "behaviors": [],
-          "content": {
-            "atlasImage": "assets\\StartingGroundTilemap.png",
-            "rowCount": 3,
-            "columnCount": 3,
-            "tileSize": 64,
-            "tilesWithHitBox": ""
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bottomMargin": 64,
-          "height": 192,
-          "leftMargin": 64,
-          "name": "Water_Passable",
-          "persistentUuid": "a377d2f3-23ad-4df6-86a6-32673f9894ea",
-          "rightMargin": 64,
-          "texture": "assets\\StartingWater.png",
-          "tiled": true,
-          "topMargin": 64,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 192,
-          "variables": [],
-          "effects": [],
           "behaviors": [
             {
-              "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
               "cost": 2,
-              "impassable": false
+              "impassable": true,
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
             }
-          ]
+          ],
+          "content": {
+            "atlasImage": "assets\\StartingGroundTilemap.png",
+            "rowCount": 6,
+            "columnCount": 6,
+            "tileSize": 32,
+            "tilesWithHitBox": "12,18,24,30,13,19,25,31,14,20,26,32,15,21,27,33,16,22,28,34,17,23,29,35"
+          }
         },
         {
           "assetStoreId": "",
@@ -672,46 +851,6 @@
           }
         },
         {
-          "assetStoreId": "ddc21d70ec32fe6cc735b0088be88501fcd2d9a0f35dd12322c0eeff17d5dcd3",
-          "name": "WoodFloor066ABlock",
-          "persistentUuid": "518d0d13-68ff-421f-b28e-7a129f9a4407",
-          "type": "Scene3D::Cube3DObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "width": 100,
-            "height": 100,
-            "depth": 100,
-            "enableTextureTransparency": false,
-            "facesOrientation": "Y",
-            "frontFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "backFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "backFaceUpThroughWhichAxisRotation": "X",
-            "leftFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "rightFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "topFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "bottomFaceResourceName": "ambientcg-woodfloor-066-a-color.jpg",
-            "frontFaceVisible": true,
-            "backFaceVisible": true,
-            "leftFaceVisible": true,
-            "rightFaceVisible": true,
-            "topFaceVisible": true,
-            "bottomFaceVisible": true,
-            "frontFaceResourceRepeat": true,
-            "backFaceResourceRepeat": true,
-            "leftFaceResourceRepeat": true,
-            "rightFaceResourceRepeat": true,
-            "topFaceResourceRepeat": true,
-            "bottomFaceResourceRepeat": true,
-            "tileScale": 0.2,
-            "materialType": "StandardWithoutMetalness",
-            "isCastingShadow": true,
-            "isReceivingShadow": true,
-            "tint": "255;255;255"
-          }
-        },
-        {
           "additive": false,
           "assetStoreId": "",
           "destroyWhenNoParticles": true,
@@ -786,8 +925,253 @@
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Outline",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "State",
+          "persistentUuid": "cfe98511-da81-4c92-af84-384d87ba9ce5",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FINE",
+          "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "FINE",
+            "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;255;33"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "State2",
+          "persistentUuid": "41f40b8a-365d-4e1d-b25c-582f29d07bc9",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FINE",
+          "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "FINE",
+            "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;255;33"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "State3",
+          "persistentUuid": "ebe746cb-c1a3-466b-a10a-ec4e78d008f7",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FINE",
+          "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "FINE",
+            "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;255;33"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "State4",
+          "persistentUuid": "686f38c1-fada-42c1-81db-39a783acfa93",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FINE",
+          "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "FINE",
+            "font": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;255;33"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "TextBox",
+          "persistentUuid": "6475fab7-1e96-4e17-a0cb-619b119f8159",
+          "texture": "NewTiledSprite2",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Text",
+          "persistentUuid": "305ccf77-cbe9-4fe9-8139-aa2d45d9c9c5",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TEXT",
+          "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 33,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TEXT",
+            "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;255;33"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -815,19 +1199,31 @@
             "objectName": "Ground_Tilemap"
           },
           {
-            "objectName": "Water_Passable"
+            "objectName": "State"
+          },
+          {
+            "objectName": "State2"
+          },
+          {
+            "objectName": "State3"
+          },
+          {
+            "objectName": "State4"
+          },
+          {
+            "objectName": "Text"
           },
           {
             "objectName": "Collision_Impassable"
-          },
-          {
-            "objectName": "WoodFloor066ABlock"
           },
           {
             "objectName": "HPmeter"
           },
           {
             "objectName": "HealthBackground"
+          },
+          {
+            "objectName": "TextBox"
           }
         ]
       },
@@ -1416,6 +1812,8 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
+          "folded": true,
           "name": "UI & Stuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1651,33 +2049,10 @@
                   },
                   "parameters": [
                     "",
-                    "HealthBackground",
-                    "0",
-                    "538-43",
-                    "\"UI\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
                     "HPmeter",
-                    "0",
-                    "538-43",
+                    "HPmeter.X()",
+                    "HPmeter.Y()",
                     "\"UI\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "HealthBackground",
-                    "Resizable",
-                    "150",
-                    "40"
                   ]
                 }
               ]
@@ -1728,7 +2103,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Layer",
+          "name": "UI",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -1871,6 +2246,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "TileMap",
