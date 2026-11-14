@@ -3528,7 +3528,7 @@
                   "parameters": [
                     "",
                     "+",
-                    "1",
+                    "(CursorX()-(ScreenWidth()/2))/100",
                     "\"3d\"",
                     "0"
                   ]
