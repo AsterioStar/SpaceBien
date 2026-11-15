@@ -71,6 +71,14 @@
         "name": "florp.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "hampter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hampter.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -81,6 +89,7 @@
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "EventsInProgress",
       "persistentUuid": "d10ddb98-0a0d-42f9-8c47-575c50da98b2",
       "type": "array",
@@ -237,7 +246,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.7130377630690395,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -367,7 +376,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "florp.png",
+                      "image": "hampter.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -607,233 +616,17 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneJustBegins"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"Scene Timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"Scene Timer\"",
-                ">",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Chance",
-                "=",
-                "RandomInRange(0, 100)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"Scene Timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Chance",
-                "<",
-                "90"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Chance",
-                "!=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VariableChildCount"
-              },
-              "parameters": [
-                "AvailableEvents",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EventToPick",
-                "=",
-                "RandomInRange(0, 1)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Trigger_Event",
-                "Text",
-                "=",
-                "\"YES \""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Trigger_Event",
-                "Text",
-                "+",
-                "AvailableEvents[EventToPick]"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Chance",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "PushVariable"
-              },
-              "parameters": [
-                "EventsInProgress",
-                "AvailableEvents[EventToPick]"
-              ]
-            },
-            {
-              "type": {
-                "value": "RemoveVariableChild"
-              },
-              "parameters": [
-                "AvailableEvents",
-                "AvailableEvents[EventToPick]"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Events_In_Progress",
-                "Text",
-                "=",
-                "VariableLastString(EventsInProgress)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ArrayTools::HasNumber"
-              },
-              "parameters": [
-                "EventsInProgress",
-                "EventsInProgress",
-                "0",
-                "\"Reactor Fault\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Executing",
-                "Text",
-                "=",
-                "\"Reactor is Failing!\""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "Hampter",
-                "Opacity",
-                "=",
-                "128"
-              ]
-            }
-          ],
+          "conditions": [],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonFromTextPressed"
+                    "value": "SceneJustBegins"
                   },
                   "parameters": [
-                    "",
-                    "\"Left\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsCursorOnObject"
-                  },
-                  "parameters": [
-                    "Hampter",
-                    "",
-                    "",
                     ""
                   ]
                 }
@@ -841,20 +634,185 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PushNumber"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "AvailableEvents",
+                    "",
+                    "\"Scene Timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Scene Timer\"",
+                    ">",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Chance",
+                    "=",
+                    "RandomInRange(0, 100)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Scene Timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Chance",
+                    "<",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Chance",
+                    "!=",
                     "0"
                   ]
                 },
                 {
                   "type": {
-                    "value": "RemoveVariableAt"
+                    "value": "VariableChildCount"
+                  },
+                  "parameters": [
+                    "AvailableEvents",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EventToPick",
+                    "=",
+                    "RandomInRange(0, 1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Trigger_Event",
+                    "Text",
+                    "=",
+                    "\"YES \""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Trigger_Event",
+                    "Text",
+                    "+",
+                    "AvailableEvents[EventToPick]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Chance",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushVariable"
                   },
                   "parameters": [
                     "EventsInProgress",
-                    "ArrayTools::IndexOf(EventsInProgress, 0)"
+                    "AvailableEvents[EventToPick]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveVariableChild"
+                  },
+                  "parameters": [
+                    "AvailableEvents",
+                    "AvailableEvents[EventToPick]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Events_In_Progress",
+                    "Text",
+                    "=",
+                    "VariableLastString(EventsInProgress)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ArrayTools::HasNumber"
+                  },
+                  "parameters": [
+                    "EventsInProgress",
+                    "EventsInProgress",
+                    "0",
+                    "\"Reactor Fault\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Executing",
+                    "Text",
+                    "=",
+                    "\"Reactor is Failing!\""
                   ]
                 },
                 {
@@ -865,103 +823,7 @@
                     "Hampter",
                     "Opacity",
                     "=",
-                    "255"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ArrayTools::HasNumber"
-              },
-              "parameters": [
-                "Events_In_Progress",
-                "EventsInProgress",
-                "1",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Executing",
-                "Text",
-                "=",
-                "\"The Soil is Shit!\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Hampter",
-                "=",
-                "180"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Right\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsCursorOnObject"
-                  },
-                  "parameters": [
-                    "Hampter",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PushNumber"
-                  },
-                  "parameters": [
-                    "AvailableEvents",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "RemoveVariableAt"
-                  },
-                  "parameters": [
-                    "EventsInProgress",
-                    "ArrayTools::IndexOf(EventsInProgress, 1)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "SkillPassing",
-                    "=",
-                    "SkillCheck::SkillCheck(80, 20, 40, 80)"
+                    "128"
                   ]
                 }
               ],
@@ -971,52 +833,206 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "NumberVariable"
+                        "value": "MouseButtonFromTextPressed"
                       },
                       "parameters": [
-                        "SkillPassing",
-                        ">=",
-                        "RandomFloatInRange(0,1)"
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "Hampter",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                        "value": "PushNumber"
                       },
                       "parameters": [
-                        "Probability",
-                        "Text",
-                        "=",
-                        "\"Pass!\""
+                        "AvailableEvents",
+                        "0"
                       ]
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
+                        "value": "RemoveVariableAt"
+                      },
+                      "parameters": [
+                        "EventsInProgress",
+                        "ArrayTools::IndexOf(EventsInProgress, 0)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
                       },
                       "parameters": [
                         "Hampter",
+                        "Opacity",
                         "=",
-                        "0"
+                        "255"
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ArrayTools::HasNumber"
+                  },
+                  "parameters": [
+                    "Events_In_Progress",
+                    "EventsInProgress",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Executing",
+                    "Text",
+                    "=",
+                    "\"The Soil is Shit!\""
+                  ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Else",
-                  "conditions": [],
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Hampter",
+                    "=",
+                    "180"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Right\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "Hampter",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                        "value": "PushNumber"
                       },
                       "parameters": [
-                        "Probability",
-                        "Text",
+                        "AvailableEvents",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RemoveVariableAt"
+                      },
+                      "parameters": [
+                        "EventsInProgress",
+                        "ArrayTools::IndexOf(EventsInProgress, 1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SkillPassing",
                         "=",
-                        "\"FAIL!\""
+                        "SkillCheck::SkillCheck(80, 20, 40, 80)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "SkillPassing",
+                            ">=",
+                            "RandomFloatInRange(0,1)"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Probability",
+                            "Text",
+                            "=",
+                            "\"Pass!\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Hampter",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Else",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Probability",
+                            "Text",
+                            "=",
+                            "\"FAIL!\""
+                          ]
+                        }
                       ]
                     }
                   ]
