@@ -1,0 +1,314 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "SkillCheck",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [
+    {
+      "name": "base_menor",
+      "persistentUuid": "4f22e393-fccb-4956-aafb-b698b95e36eb",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "altura_menor",
+      "persistentUuid": "f3842f3d-c09d-4174-865a-ae12a6c22939",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "AreaProbability",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "AreaRequirement",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "fullName": "SkillCheck",
+      "functionType": "Expression",
+      "name": "SkillCheck",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Crew_Morale",
+                "<",
+                "Require_Morale"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "base_menor",
+                "=",
+                "Crew_Morale"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "base_menor",
+                "=",
+                "Require_Morale"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Crew_Skill",
+                "<",
+                "Require_Skill"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "altura_menor",
+                "=",
+                "Crew_Skill"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "altura_menor",
+                "=",
+                "Require_Skill"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "base_menor",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "altura_menor",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "AreaRequirement",
+                "=",
+                "Require_Morale*Require_Skill"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "base_menor",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "altura_menor",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "AreaProbability",
+                "=",
+                "base_menor*altura_menor"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "AreaProbability",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "AreaRequirement",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "AreaProbability/AreaRequirement"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "sk",
+          "name": "Crew_Skill",
+          "type": "expression"
+        },
+        {
+          "description": "m",
+          "name": "Crew_Morale",
+          "type": "expression"
+        },
+        {
+          "description": "rm",
+          "name": "Require_Morale",
+          "type": "expression"
+        },
+        {
+          "description": "rsk",
+          "name": "Require_Skill",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "SkillCheck"
+      }
+    ]
+  },
+  "eventsBasedBehaviors": [
+    {
+      "description": "Fuck yo",
+      "fullName": "Skill Check",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "Skill_Check",
+      "objectType": "",
+      "previewIconUrl": "",
+      "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Number",
+          "label": "",
+          "name": "Property"
+        }
+      ],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "propertyName": "Property"
+          }
+        ]
+      }
+    }
+  ],
+  "eventsBasedObjects": []
+}
