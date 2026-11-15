@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-rts-unit-selection",
     "version": "1.0.0",
-    "name": "Parched Interest - Copy",
+    "name": "Space Captain",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -847,6 +847,88 @@
         "name": "engineer.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 6\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.5557095315962983,\\\"sustainPunch\\\":0,\\\"decay\\\":1.597698723438933,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":2281.9059131355207,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":44.2,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":160,\\\"vibratoFrequency\\\":218,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":6400,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":8300,\\\"highPassCutoffSweep\\\":400,\\\"compression\\\":2,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"ded\"}}",
+        "name": "ded",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ded9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ded9",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -880,7 +962,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.3841198046307484,
+        "zoomFactor": 0.6455105703311795,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1372,23 +1454,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "TinySquareBlueBar",
-          "persistentUuid": "89b24420-b8eb-45e6-b2b2-d085f21adf86",
-          "width": 160,
-          "x": 64,
-          "y": 96,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -1396,8 +1461,8 @@
           "name": "RTSUnit",
           "persistentUuid": "19db4059-2bc7-4c2c-906e-8cc8aec2012b",
           "width": 0,
-          "x": 888,
-          "y": 151,
+          "x": 822,
+          "y": 131,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -1547,6 +1612,7 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "NewTiledSprite",
+          "opacity": 0,
           "persistentUuid": "e94c7c7b-6ad5-454d-84ee-0ee0723947f4",
           "width": 1299,
           "x": -9,
@@ -1568,6 +1634,38 @@
           "x": 211,
           "y": 7,
           "zOrder": -12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Food",
+          "persistentUuid": "43a81159-e902-426f-9dac-3a1e3f94b667",
+          "width": 0,
+          "x": 883,
+          "y": 142,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 40,
+          "layer": "3d",
+          "name": "NewPointLight",
+          "persistentUuid": "1413aed5-4aaf-4718-94b2-788ea860b965",
+          "width": 40,
+          "x": 671,
+          "y": 798,
+          "z": 251,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2920,7 +3018,7 @@
             "topFaceResourceRepeat": true,
             "bottomFaceResourceRepeat": true,
             "tileScale": 0.78,
-            "materialType": "Basic",
+            "materialType": "StandardWithoutMetalness",
             "isCastingShadow": true,
             "isReceivingShadow": true,
             "tint": "255;255;255"
@@ -2954,7 +3052,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "content": {}
+          "content": {
+            "Intensity": 0.2
+          }
         },
         {
           "assetStoreId": "",
@@ -3699,6 +3799,307 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "ded",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded6",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded7",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ded9",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 0
+                          },
+                          {
+                            "x": 222,
+                            "y": 104
+                          },
+                          {
+                            "x": 0,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3931,6 +4332,83 @@
               "type": "Tween::TweenBehavior"
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Food",
+          "persistentUuid": "9a0a7829-4403-4633-a07d-8605ae670629",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite18",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 2
+                          },
+                          {
+                            "x": 58,
+                            "y": 2
+                          },
+                          {
+                            "x": 58,
+                            "y": 56
+                          },
+                          {
+                            "x": 9,
+                            "y": 56
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewPointLight",
+          "persistentUuid": "34621f58-376a-4da4-89b2-e4d12005a12d",
+          "type": "Light3D::PointLight3D",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "Color": "0;255;33",
+            "Intensity": 0.1,
+            "Range": 2000
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -4052,6 +4530,12 @@
           },
           {
             "objectName": "NewTiledSprite"
+          },
+          {
+            "objectName": "Food"
+          },
+          {
+            "objectName": "NewPointLight"
           }
         ]
       },
@@ -5854,6 +6338,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5945,6 +6430,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5983,7 +6469,7 @@
                           "parameters": [
                             "Meltdown",
                             "=",
-                            "20"
+                            "10"
                           ]
                         },
                         {
@@ -6052,6 +6538,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -6226,6 +6713,21 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "BlackSquareDecoratedButton",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "NumberVariable"
                       },
                       "parameters": [
@@ -6242,6 +6744,71 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "Trans",
+                        "FlashTransitionPainter",
+                        "\"255;255;255\"",
+                        "1",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraPosition2"
+                      },
+                      "parameters": [
+                        "",
+                        "\"s\"",
+                        "737",
+                        "788",
+                        "\"3d\"",
+                        "\"easeInQuad\"",
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "Enter",
+                        "\"3d\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "Enter",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CamLock",
+                        "True",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.5"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
@@ -6368,7 +6935,7 @@
                       "parameters": [
                         "Meltdown",
                         "<",
-                        "10"
+                        "5"
                       ]
                     },
                     {
@@ -6402,7 +6969,7 @@
                       "parameters": [
                         "Meltdown",
                         ">=",
-                        "10"
+                        "5"
                       ]
                     },
                     {
@@ -6424,6 +6991,183 @@
                         ""
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "RepeatEveryXSeconds::Repeat"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Hambreado\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "RTSUnit",
+                    "Food",
+                    "",
+                    "",
+                    "no"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "Hunger",
+                    "-",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "RepeatEveryXSeconds::Repeat"
+                  },
+                  "parameters": [
+                    "",
+                    "\"comida\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "RTSUnit",
+                    "Food",
+                    "",
+                    "",
+                    "no"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "Hunger",
+                    "+",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::IsEmpty"
+                  },
+                  "parameters": [
+                    "Hunger",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RTSUnit",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CurrentText",
+                    "=",
+                    "\"Engineer Died!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Enter",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Heartbeat",
+                    "Animation",
+                    "=",
+                    "\"ded\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "State",
+                    "Text",
+                    "=",
+                    "\"DED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::ChangeColor"
+                  },
+                  "parameters": [
+                    "State",
+                    "\"173;173;173\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "ded",
+                    "",
+                    "20",
+                    ""
                   ]
                 }
               ]
@@ -6582,7 +7326,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [
             {
               "defaultSize": true,
@@ -6611,7 +7355,7 @@
           "isLocked": false,
           "name": "3d",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -6668,7 +7412,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
