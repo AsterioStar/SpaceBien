@@ -2583,6 +2583,31 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "+",
+                    "(CursorX()-(ScreenWidth()/2))/200",
+                    "\"3d\"",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -3511,31 +3536,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetCameraAngle"
-                  },
-                  "parameters": [
-                    "",
-                    "+",
-                    "(CursorX()-(ScreenWidth()/2))/100",
-                    "\"3d\"",
-                    "0"
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "layers": [
@@ -3639,7 +3639,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
