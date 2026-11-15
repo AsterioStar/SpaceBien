@@ -791,6 +791,62 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Particles/256d43039af1b47a15b811d4eb84219335f35f7b7e9c69a59c7e4365e1a26bf0_SoftDot.png",
           "name": "SoftDot.png"
         }
+      },
+      {
+        "file": "assets/Sprite-nave.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprite-nave2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprite-nave3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprite-nave4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprite-nave5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprite-nave6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprite-nave6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "engineer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "engineer.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -824,7 +880,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4633111824514185,
+        "zoomFactor": 1.3841198046307484,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1130,6 +1186,7 @@
           "keepRatio": true,
           "layer": "",
           "name": "Ground_Tilemap",
+          "opacity": 0,
           "persistentUuid": "0b3e3314-224c-42f0-bf60-91891ceeca17",
           "width": 1056,
           "x": 224,
@@ -1139,7 +1196,7 @@
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":33,\"dimY\":17,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,21,13,20,20,20,20,21,-1,-1,-1],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,0,0,0,0,0,15,15,15,15,15,-1],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,0,0,0,0,0,15,15,15,15,15,-1],[20,0,0,0,0,0,0,0,0,0,21,21,21,0,0,0,0,21,21,0,0,0,21,21,0,0,0,15,15,15,15,15,-1],[20,21,21,21,21,21,21,21,21,21,21,21,21,0,0,0,0,21,21,0,0,0,21,21,0,0,0,15,15,15,15,15,20],[20,0,0,0,0,0,0,0,0,0,21,21,21,0,0,0,0,21,21,0,0,0,21,21,0,0,0,20,21,21,21,21,20],[20,0,0,0,0,0,0,0,0,0,21,21,21,0,0,0,0,21,21,0,0,0,21,21,0,0,0,20,21,21,21,21,20],[20,0,0,0,0,0,0,0,0,0,21,21,21,0,0,0,0,21,21,0,0,0,21,21,21,15,15,20,0,0,0,0,20],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,20],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,20],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,21,21,21,15,15,20,0,0,0,0,20],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,0,0,0,21,21,15,15,15,15,15,20],[20,21,21,21,21,21,21,0,0,21,21,21,21,21,21,21,21,21,21,0,0,0,0,0,0,21,21,15,15,15,15,15,20],[20,0,0,0,21,21,21,0,0,21,21,21,21,21,21,21,21,21,21,0,0,0,0,0,0,21,21,15,15,15,15,15,-1],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,15,15,15,15,15,-1],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,15,15,15,15,15,-1],[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,13,20,20,20,20,21,-1,-1,-1]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":33,\"dimY\":17,\"layers\":[{\"id\":0,\"alpha\":0.5,\"tiles\":[[19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,19,19,19,19,19,19,0,0,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,19,19,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,19,19,19,19,19,19,19,0,0,0,0,0,0,0,0,0,19,19,19,19,19,0,0,0,0,19],[20,0,0,0,0,0,0,19,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,19,0,0,0,19,19,19,0,0,19],[20,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,19,0,0,0,0,19,19,19,0,0,0,0,0,19,0,0,19],[20,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,19,19,0,0,19,0,0,19,0,0,0,0,0,19,0,0,19],[20,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,19],[20,0,0,0,0,0,0,19,19,19,19,19,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,19,19,19,19,19,19,19,19,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19],[20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19],[19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19]]}]}"
             }
           ],
           "initialVariables": []
@@ -1273,8 +1330,8 @@
           "name": "You",
           "persistentUuid": "2287e174-1935-42f2-a6e8-12dd9b491a4e",
           "width": 0,
-          "x": 1184,
-          "y": 256,
+          "x": 1052,
+          "y": 244,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -1339,8 +1396,8 @@
           "name": "RTSUnit",
           "persistentUuid": "19db4059-2bc7-4c2c-906e-8cc8aec2012b",
           "width": 0,
-          "x": 1040,
-          "y": 195,
+          "x": 888,
+          "y": 151,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -1458,8 +1515,8 @@
           "name": "Reactor",
           "persistentUuid": "650cc0c5-bc9d-4578-919c-3c435e102c9b",
           "width": 0,
-          "x": 285,
-          "y": 190,
+          "x": 505,
+          "y": 231,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -1490,12 +1547,27 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "NewTiledSprite",
-          "opacity": 0,
           "persistentUuid": "e94c7c7b-6ad5-454d-84ee-0ee0723947f4",
           "width": 1299,
           "x": -9,
           "y": -4,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "b923a687-c9ea-48c6-a239-ffb84274b67a",
+          "width": 0,
+          "x": 211,
+          "y": 7,
+          "zOrder": -12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1511,18 +1583,6 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [
-            {
-              "effectType": "Outline",
-              "name": "Out",
-              "doubleParameters": {
-                "padding": 3,
-                "thickness": 3
-              },
-              "stringParameters": {
-                "color": "0;0;0"
-              },
-              "booleanParameters": {}
-            },
             {
               "effectType": "Outline",
               "name": "Selected",
@@ -1573,12 +1633,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartUnit2",
+                      "image": "engineer.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 8,
+                        "y": 8
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1626,6 +1686,17 @@
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": []
                 }
               ]
             }
@@ -2561,16 +2632,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Sprite-nave",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.26,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprite-nave.png",
+                      "image": "Sprite-nave",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2590,16 +2662,196 @@
                             "y": 0
                           },
                           {
-                            "x": 200,
+                            "x": 1068,
                             "y": 0
                           },
                           {
-                            "x": 200,
-                            "y": 100
+                            "x": 1068,
+                            "y": 534
                           },
                           {
                             "x": 0,
-                            "y": 100
+                            "y": 534
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprite-nave2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 534
+                          },
+                          {
+                            "x": 0,
+                            "y": 534
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprite-nave3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 534
+                          },
+                          {
+                            "x": 0,
+                            "y": 534
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprite-nave4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 534
+                          },
+                          {
+                            "x": 0,
+                            "y": 534
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprite-nave5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 534
+                          },
+                          {
+                            "x": 0,
+                            "y": 534
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprite-nave6",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 0
+                          },
+                          {
+                            "x": 1068,
+                            "y": 534
+                          },
+                          {
+                            "x": 0,
+                            "y": 534
                           }
                         ]
                       ]
@@ -5731,7 +5983,7 @@
                           "parameters": [
                             "Meltdown",
                             "=",
-                            "10"
+                            "20"
                           ]
                         },
                         {
@@ -6061,7 +6313,7 @@
                         "ExplosionSparks",
                         "Object3D",
                         "=",
-                        "TV.Object3D::UpZ()"
+                        "226"
                       ]
                     },
                     {
@@ -6072,7 +6324,7 @@
                         "ExplosionSmoke",
                         "Object3D",
                         "=",
-                        "TV.Object3D::UpZ()"
+                        "226"
                       ]
                     },
                     {
@@ -6083,7 +6335,7 @@
                         "ExplosionFireball",
                         "Object3D",
                         "=",
-                        "TV.Object3D::UpZ()"
+                        "226"
                       ]
                     },
                     {
@@ -6116,7 +6368,7 @@
                       "parameters": [
                         "Meltdown",
                         "<",
-                        "5"
+                        "10"
                       ]
                     },
                     {
@@ -6135,6 +6387,40 @@
                         "Campfire",
                         "=",
                         "220",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Meltdown",
+                        ">=",
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleEmitter3D::ParticleEmitter3D::SetFlow"
+                      },
+                      "parameters": [
+                        "Campfire",
+                        "=",
+                        "0",
                         ""
                       ]
                     }
@@ -6296,7 +6582,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -6325,7 +6611,7 @@
           "isLocked": false,
           "name": "3d",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -6382,7 +6668,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
