@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
@@ -16,7 +16,7 @@
     "pixelsRounding": true,
     "projectUuid": "40972eaf-1ad9-4e2f-89e3-99414c9f45a0",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "",
+    "sizeOnStartupMode": "scaleOuter",
     "templateSlug": "starting-rts-unit-selection",
     "version": "1.0.0",
     "name": "Space Captain",
@@ -929,6 +929,26 @@
         "name": "ded9",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "snd-explosion-101soundboards.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "snd-explosion-101soundboards.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "youtube_o84vJH19toI_audio.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "youtube_o84vJH19toI_audio.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -962,7 +982,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311795,
+        "zoomFactor": 0.3673257545059002,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1666,6 +1686,39 @@
           "y": 798,
           "z": 251,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "NewText2",
+          "opacity": 3,
+          "persistentUuid": "25994767-2184-4e10-84ea-527c99550f70",
+          "width": 0,
+          "x": 501,
+          "y": 21,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "NewText2",
+          "persistentUuid": "a3062495-f718-4ef5-a3da-b1f598356a17",
+          "width": 0,
+          "x": 378,
+          "y": -506,
+          "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4409,6 +4462,55 @@
             "Intensity": 0.1,
             "Range": 2000
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText2",
+          "persistentUuid": "2a4a5cbd-f06b-42cf-a460-f539ec4eed2c",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "YOU DIED",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "YOU DIED",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -4416,6 +4518,9 @@
         "children": [
           {
             "objectName": "RTSUnit"
+          },
+          {
+            "objectName": "NewText2"
           },
           {
             "objectName": "Heartbeat"
@@ -4636,6 +4741,16 @@
                 "\"Outline\"",
                 "no"
               ]
+            },
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
             }
           ],
           "events": [
@@ -4674,6 +4789,92 @@
                     "\"Touchscreen\""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText2",
+                "Text",
+                "=",
+                "\"Survive.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "NewText2",
+                "Tween",
+                "Opacity",
+                "\"s\"",
+                "255",
+                "\"linear\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "NewText2",
+                "Tween",
+                "Opacity",
+                "\"s\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                ""
               ]
             }
           ]
@@ -6191,6 +6392,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [],
@@ -6830,7 +7032,7 @@
                       },
                       "parameters": [
                         "",
-                        "magiaz-missile_exploding-508209.mp3",
+                        "youtube_o84vJH19toI_audio.mp3",
                         "",
                         "",
                         ""
@@ -7073,6 +7275,79 @@
                     "Hunger",
                     "+",
                     "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                  },
+                  "parameters": [
+                    "Hunger",
+                    "<",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "NewText2",
+                    "Text",
+                    "=",
+                    "\"The engineer needs to eat.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "NewText2",
+                    "Tween",
+                    "Opacity",
+                    "\"s\"",
+                    "255",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "NewText2",
+                    "Tween",
+                    "Opacity",
+                    "\"s\"",
+                    "0",
+                    "\"linear\"",
+                    "0.5",
                     ""
                   ]
                 }
@@ -7354,7 +7629,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "3d",
-          "renderingType": "",
+          "renderingType": "2d+3d",
           "visibility": true,
           "cameras": [],
           "effects": [
@@ -7664,7 +7939,37 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
